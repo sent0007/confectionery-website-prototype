@@ -30,6 +30,23 @@ header {
   background-color: #e2e2e2;
 }
 
+header .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo {
+  width: 5em;
+  display: none;
+}
+
+header .logo-img {
+  width: 100%;
+}
+
+
+
 header h1 {
   font-size: 1.75em;
   text-align: center;
@@ -70,6 +87,10 @@ nav a:hover {
   h1,
   p {
     margin: 0 0 1.3rem;
+  }
+
+  header .logo {
+    display: block;
   }
 
   nav ul {
