@@ -37,7 +37,7 @@ header .banner {
 }
 
 header .logo {
-  width: 5em;
+  width: 3em;
   display: none;
 }
 
@@ -75,6 +75,46 @@ nav a {
 
 nav a:hover {
   background-color:#cccccc;
+}
+
+.container {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.body-text {
+  padding: 0 1.25em .5em;
+}
+
+.body-text h2 {
+  font-size: 1.5rem;
+  margin-top: .75em;
+  margin-bottom: .25em;
+}
+
+.body-text a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  padding: .75em;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.body-text a:hover {
+  background-color: #ccc;
+  color: #000;
 }
 
 @media only screen and (min-width: 25em) {
@@ -122,6 +162,22 @@ nav a:hover {
     text-align: center;
   }
 
+  .container {
+    position: relative;
+    background-color: inherit;
+  }
+
+  .body-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    max-width: 25em;
+    min-width: 25em;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -136,22 +192,22 @@ nav a:hover {
     margin: 0 0 1.5rem;
   }
 
-  header {
+  .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
-  header h1 {
-    flex-grow:1;
-
+  header .banner {
+    flex-grow: 1;
   }
 
   header nav {
-  flex-grow: 1;
-
+    flex-grow: 1;
   }
+
+  .body-text {
+    left: 27%;
 
 }
 
@@ -161,9 +217,13 @@ nav a:hover {
     font-size: 130%;
   }
 
-  header {
+  .wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .body-text {
+    left: 27%;
   }
 
 }
