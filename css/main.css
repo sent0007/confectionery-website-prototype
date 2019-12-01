@@ -136,6 +136,10 @@ ul li .card-body {
   text-align: center;
 }
 
+ul .card {
+  margin-bottom: 1em;
+}
+
 
 @media only screen and (min-width: 25em) {
 
@@ -161,6 +165,15 @@ ul li .card-body {
   nav li {
     width: 50%;
     text-align: center;
+  }
+
+  .item-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul .card {
+    width: 50%;
   }
 
 }
@@ -198,6 +211,8 @@ ul li .card-body {
     color: #fff;
   }
 
+
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -228,6 +243,11 @@ ul li .card-body {
 
   .body-text {
     left: 27%;
+  }
+
+  ul .card {
+    width: 25%;
+  }
 
 }
 
