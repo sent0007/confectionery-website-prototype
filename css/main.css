@@ -152,6 +152,11 @@ main .best-sell {
   width: 100%;
 }
 
+.b-container {
+  display: none;
+  width: 100%;
+}
+
 .article {
   background-color: #ccc;
   margin: 0 auto;
@@ -186,6 +191,10 @@ main .best-sell {
 
 .article-container2 {
   display: none;
+}
+
+.box2 p {
+  font-family: Spectral, serif;
 }
 
 .social-container .social img {
@@ -280,8 +289,12 @@ main .best-sell {
     background-color: #f2f2f2;
   }
 
-  .item-container .a-container {
+  .a-container, .b-container {
     width: 50%;
+  }
+
+  .b-container {
+    display: block;
   }
 
 }
@@ -366,7 +379,7 @@ main .best-sell {
     margin: 1em;
   }
 
-  .item-container .a-container {
+  .a-container, .b-container {
     width: 25%;
   }
 
