@@ -45,8 +45,6 @@ header .logo-img {
   width: 100%;
 }
 
-
-
 header h1 {
   font-size: 1.75em;
   text-align: center;
@@ -78,7 +76,7 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -127,31 +125,37 @@ main .best-sell {
 
 .item-cards {
   list-style-type: none;
-  margin: 1em 0 1em;
+  margin: 1em 0;
   padding: 0;
 }
 
-ul li .card-img {
+.card-img {
   max-width: 10em;
   margin: 0 auto;
 }
 
-ul li .card-img img {
+.card-img img {
   width: 100%;
 }
 
-ul li .card-body {
+.card-body {
   text-align: center;
+  margin-bottom: 1em;
 }
 
-ul .card {
-  margin-bottom: 1em;
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.a-container {
+  width: 100%;
 }
 
 .article {
   background-color: #ccc;
   margin: 0 auto;
-  padding: 2em 0 2em;
+  padding: 2em 0;
 }
 
 .article .box1 {
@@ -161,7 +165,7 @@ ul .card {
 
 .article .box2 {
   max-width: 35em;
-  padding: .5em 1em 2em 1em;
+  padding: .5em 1em 2em;
 }
 
 .article .box2 h3 {
@@ -199,8 +203,6 @@ ul .card {
   flex-wrap: wrap;
   align-items: center;
   background-color: #f2f2f2;
-
-
 }
 
 .footer h4 {
@@ -239,6 +241,9 @@ ul .card {
   width: 100%;
 }
 
+.footer .social {
+  padding-right: 0;
+}
 
 @media only screen and (min-width: 25em) {
 
@@ -275,7 +280,7 @@ ul .card {
     background-color: #f2f2f2;
   }
 
-  ul .a-container {
+  .item-container .a-container {
     width: 50%;
   }
 
@@ -337,6 +342,11 @@ ul .card {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #ccc;
   }
 
   header .banner {
@@ -356,16 +366,8 @@ ul .card {
     margin: 1em;
   }
 
-  ul .a-container {
+  .item-container .a-container {
     width: 25%;
-  }
-
-  .wrapper {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: #ccc;
   }
 
 }
@@ -393,4 +395,5 @@ ul .card {
   .article {
     display: flex;
   }
+
 }
