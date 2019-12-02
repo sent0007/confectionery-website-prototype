@@ -54,18 +54,18 @@ header h1 {
   padding: .3em .3em .5em;
 }
 
-nav ul {
+header nav ul {
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-nav li {
+header nav li {
   list-style-type: none;
 }
 
-nav a {
+header nav a {
   display: block;
   text-decoration: none;
   color: #000;
@@ -73,8 +73,8 @@ nav a {
   white-space: nowrap;
 }
 
-nav a:hover {
-  background-color:#cccccc;
+header nav a:hover {
+  background-color:#f2f2f2;
 }
 
 .container {
@@ -179,6 +179,17 @@ ul .card {
   display: none;
 }
 
+.social-container .social img {
+  display: block;
+  width: 100%;
+}
+
+.social > li {
+  width: 3em;
+  margin: 0 .5em;
+}
+
+
 @media only screen and (min-width: 25em) {
 
   html {
@@ -195,12 +206,12 @@ ul .card {
     display: block;
   }
 
-  nav ul {
+  header nav ul {
     display: flex;
     flex-wrap: wrap;
   }
 
-  nav li {
+  header nav li {
     width: 50%;
     text-align: center;
   }
@@ -228,7 +239,7 @@ ul .card {
     margin: 0 0 1.4rem;
   }
 
-  nav li {
+  header nav li {
     width: 25%;
     text-align: center;
   }
