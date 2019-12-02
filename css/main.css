@@ -184,9 +184,54 @@ ul .card {
   width: 100%;
 }
 
+.footer-container, .footer-container2 {
+  padding-top: 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f2f2f2;
+
+
+}
+
+.footer h4 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer ul {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer a {
+  color: #000;
+}
+
+.nav-links {
+  padding: 0 1rem;
+}
+
+.social {
+  margin-left: auto;
+  display: flex;
+  padding: 0 1rem;
+}
+
 .social > li {
   width: 3em;
   margin: 0 .5em;
+}
+
+.copyright {
+  padding: 0 1rem;
+  width: 100%;
 }
 
 
