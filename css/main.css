@@ -59,10 +59,14 @@ header nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header nav li {
   list-style-type: none;
+  width: 50%;
+  text-align: center;
 }
 
 header nav a {
@@ -147,6 +151,7 @@ ul .card {
 .article {
   background-color: #ccc;
   margin: 0 auto;
+  padding: 2em 0 2em;
 }
 
 .article .box1 {
@@ -185,7 +190,7 @@ ul .card {
 }
 
 .footer-container, .footer-container2 {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 .footer {
@@ -264,6 +269,10 @@ ul .card {
   .item-cards {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .a-container:hover {
+    background-color: #f2f2f2;
   }
 
   ul .a-container {
